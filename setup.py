@@ -34,7 +34,6 @@ def install_packages(load_libs=False):
 
     ctypes.cdll.LoadLibrary('/content/root/install/lib/libCore.so')
     ctypes.cdll.LoadLibrary('/content/root/install/lib/libThread.so')
-    ctypes.cdll.LoadLibrary('/content/root/install/lib/libtbb.so.2')
     ctypes.cdll.LoadLibrary('/content/root/install/lib/libImt.so')
     ctypes.cdll.LoadLibrary('/content/root/install/lib/libRIO.so')
     ctypes.cdll.LoadLibrary('/content/root/install/lib/libNet.so')
@@ -48,7 +47,7 @@ def install_packages(load_libs=False):
     ctypes.cdll.LoadLibrary('/content/root/install/lib/libGraf.so')
     ctypes.cdll.LoadLibrary('/content/root/install/lib/libGpad.so')
     ctypes.cdll.LoadLibrary('/content/root/install/lib/libGraf3d.so')
-    ctypes.cdll.LoadLibrary('/content/root/install/lib/libcppyy_backend3_7.so')
+    ctypes.cdll.LoadLibrary('/content/root/install/lib/libcppyy_backend3_9.so')
     print("✔️")
 
     import ROOT
