@@ -17,7 +17,7 @@ def install_packages(load_libs=False):
         print("✔️")
 
         print("Installing dependencies....", end=" ")
-        subprocess.run(['apt-get', 'install', 'libgsl-dev'],
+        subprocess.run(['apt-get', 'install', 'libgsl-dev', 'libglu1'],
                        check=True, text=True)
         subprocess.run(['pip3', 'install', '--upgrade', 'gmsh'],
                        check=True, text=True)
@@ -47,10 +47,11 @@ def install_packages(load_libs=False):
     ctypes.cdll.LoadLibrary('/content/root/install/lib/libGraf.so')
     ctypes.cdll.LoadLibrary('/content/root/install/lib/libGpad.so')
     ctypes.cdll.LoadLibrary('/content/root/install/lib/libGraf3d.so')
-    ctypes.cdll.LoadLibrary('/content/root/install/lib/libcppyy_backend3_9.so')
+    ctypes.cdll.LoadLibrary('/content/root/install/lib/libcppyy_backend3_10.so')
     print("✔️")
 
     import ROOT
-    ROOT.gSystem.Load("/content/garfield/install/lib/libmagboltz.so")
-    ROOT.gSystem.Load("/content/garfield/install/lib/libGarfield.so")
+	ROOT.gSystem.Load("/content/garfield/install/lib/libdegrade.so.3")
+	ROOT.gSystem.Load("/content/garfield/install/lib/libmagboltz.so.11")
+	ROOT.gSystem.Load("/content/garfield/install/lib/libGarfield.so.0.3.0")
     print("All done! 🚀")
