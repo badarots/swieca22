@@ -7,7 +7,7 @@ import sys
 def install_packages(load_libs=False):
     if not os.path.isfile("/content/env.tar.gz"):
         print("Downloading binaries...", end=" ")
-        subprocess.run(['wget', '-O', '/content/env.tar.gz', 'https://www.dropbox.com/s/iihaledsj4nckhw/environ.tar.gz'],
+        subprocess.run(['wget', '-O', '/content/env.tar.gz', 'https://www.dropbox.com/scl/fi/lkj7tqtk201vvl8q544do/env.tar.gz?rlkey=17j62dhb9pt3ri4xhunxxm8qm'],
                        check=True, text=True)
         print("✔️")
 
