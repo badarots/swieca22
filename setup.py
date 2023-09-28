@@ -51,7 +51,7 @@ def install_packages(load_libs=False):
     print("✔️")
 
     import ROOT
-	ROOT.gSystem.Load("/content/garfield/install/lib/libdegrade.so.3")
-	ROOT.gSystem.Load("/content/garfield/install/lib/libmagboltz.so.11")
-	ROOT.gSystem.Load("/content/garfield/install/lib/libGarfield.so.0.3.0")
+    ROOT.gSystem.Load("/content/garfield/install/lib/libdegrade.so.3")
+    ROOT.gSystem.Load("/content/garfield/install/lib/libmagboltz.so.11")
+    ROOT.gSystem.Load("/content/garfield/install/lib/libGarfield.so.0.3.0")
     print("All done! 🚀")
